@@ -5,9 +5,6 @@
   "scripts": {
     "start": "expo start"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "expo": "~51.0.20",
