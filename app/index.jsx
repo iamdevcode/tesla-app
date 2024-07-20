@@ -10,7 +10,7 @@ import {
 } from '@expo/vector-icons'
 import { Image, ScrollView, View } from 'react-native'
 
-export default function HomePage() {
+export default function HomeView() {
   return (
     <ScrollView
       contentContainerStyle={{ padding: 20 }}

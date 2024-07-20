@@ -6,33 +6,33 @@ const list_options = [
   },
   {
     name: 'Climate',
-    iconName: 'fan',
-    href: '/climate'
+    iconName: 'fan'
+    // href: '/climate'
   },
   {
     name: 'Location',
-    iconName: 'map-marker',
-    href: '/location'
+    iconName: 'map-marker'
+    // href: '/location'
   },
   {
     name: 'Summon',
-    iconName: 'ship-wheel',
-    href: '/summon'
+    iconName: 'ship-wheel'
+    // href: '/summon'
   },
   {
     name: 'Security',
-    iconName: 'shield-check',
-    href: '/security'
+    iconName: 'shield-check'
+    // href: '/security'
   },
   {
     name: 'Updates',
-    iconName: 'update',
-    href: '/updates'
+    iconName: 'update'
+    // href: '/updates'
   },
   {
     name: 'Pet mode',
-    iconName: 'dog',
-    href: '/pet-mode'
+    iconName: 'dog'
+    // href: '/pet-mode'
   }
 ]
 
