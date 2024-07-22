@@ -1,6 +1,6 @@
+import images from '#/images'
 import { ListOptions } from '@/components/ListOptions'
 import { Status } from '@/components/Status'
-import images from '@/picture'
 import {
   Entypo,
   FontAwesome,

@@ -1,11 +1,11 @@
-import seed from '@/seed'
+import constants from '#/constants'
 import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'
 import { Link } from 'expo-router'
 import { Text, TouchableOpacity, View } from 'react-native'
 
 export const ListOptions = () => (
   <View className="pt-8">
-    {seed.list_options.map(({ name, iconName, href }, i) => (
+    {constants.list_options.map(({ name, iconName, href }, i) => (
       <Link key={i} href={!href ? '' : href} asChild>
         <TouchableOpacity className="flex-row items-center pb-6">
           <MaterialCommunityIcons name={iconName} size={26} color="gray" />
