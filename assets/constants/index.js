@@ -1,13 +1,13 @@
 const list_options = [
   {
     name: 'Controls',
-    iconName: 'car',
-    href: '/controls'
+    iconName: 'car'
+    // href: '/controls'
   },
   {
     name: 'Climate',
-    iconName: 'fan'
-    // href: '/climate'
+    iconName: 'fan',
+    href: '/climate'
   },
   {
     name: 'Location',

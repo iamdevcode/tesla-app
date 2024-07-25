@@ -1,6 +1,6 @@
 import images from '#/images'
-import { ListOptions } from '@/components/ListOptions'
-import { Status } from '@/components/Status'
+import { ListOptions } from '@/components/ui/ListOptions'
+import { Status } from '@/components/ui/Status'
 import {
   Entypo,
   FontAwesome,
@@ -10,12 +10,12 @@ import {
 } from '@expo/vector-icons'
 import { Image, ScrollView, View } from 'react-native'
 
-export default function HomeView() {
+export default function HomeScreen() {
   return (
     <ScrollView
       contentContainerStyle={{ padding: 20 }}
       showsVerticalScrollIndicator={false}
-      className="gap-y-2 bg-[#161818]"
+      className="bg-[#161818]"
     >
       <View className="flex-row justify-between">
         <Status />
@@ -26,7 +26,7 @@ export default function HomeView() {
         className="w-full h-[300px]"
         resizeMode="contain"
       />
-      <View className="flex-row justify-around">
+      <View className="flex-row justify-around pb-8">
         <Entypo name="lock" size={26} color="gray" />
         <MaterialCommunityIcons name="fan" size={26} color="gray" />
         <FontAwesome5 name="bolt" size={26} color="gray" />
