@@ -1,6 +1,6 @@
 import images from '#/images'
-import { ListOptions } from '@/components/ui/ListOptions'
-import { Status } from '@/components/ui/Status'
+import { ListOptions } from '@/components/ListOptions'
+import { Status } from '@/components/Status'
 import {
   Entypo,
   FontAwesome,
@@ -13,7 +13,7 @@ import { Image, ScrollView, View } from 'react-native'
 export default function HomeScreen() {
   return (
     <ScrollView
-      contentContainerStyle={{ padding: 20 }}
+      contentContainerStyle={{ padding: 20, marginTop: 10 }}
       showsVerticalScrollIndicator={false}
       className="bg-[#161818]"
     >
