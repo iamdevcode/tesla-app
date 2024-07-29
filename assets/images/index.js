@@ -1,4 +1,3 @@
-import car from './car.png'
-import climate from './climate.png'
+import tesla_logo_big from './tesla-logo-big.png'
 
-export default { car, climate }
+export default { tesla_logo_big }

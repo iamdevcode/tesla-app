@@ -1,38 +1,33 @@
 import images from '#/images'
-import { ListOptions } from '@/components/ListOptions'
-import { Status } from '@/components/Status'
-import {
-  Entypo,
-  FontAwesome,
-  FontAwesome5,
-  Ionicons,
-  MaterialCommunityIcons
-} from '@expo/vector-icons'
-import { Image, ScrollView, View } from 'react-native'
+import { LinearGradient } from 'expo-linear-gradient'
+import { Image, Text, TouchableOpacity } from 'react-native'
 
-export default function HomeScreen() {
+export default function App() {
   return (
-    <ScrollView
-      contentContainerStyle={{ padding: 20, marginTop: 10 }}
-      showsVerticalScrollIndicator={false}
-      className="bg-[#161818]"
+    <LinearGradient
+      style={{
+        height: '100%',
+        marginTop: 30,
+        paddingVertical: 80,
+        paddingHorizontal: 20
+      }}
+      colors={['#000', '#021526', '#E90074']}
+      locations={[0, 0.2, 0.9]}
+      end={{ x: -0.6, y: 1.8 }}
     >
-      <View className="flex-row justify-between">
-        <Status />
-        <FontAwesome name="user-circle" size={24} color="gray" />
-      </View>
       <Image
-        source={images.car}
-        className="w-full h-[300px]"
-        resizeMode="contain"
+        source={images.tesla_logo_big}
+        style={{
+          width: 300,
+          height: 300,
+          marginHorizontal: 'auto'
+        }}
       />
-      <View className="flex-row justify-around pb-8">
-        <Entypo name="lock" size={26} color="gray" />
-        <MaterialCommunityIcons name="fan" size={26} color="gray" />
-        <FontAwesome5 name="bolt" size={26} color="gray" />
-        <Ionicons name="car-sport-sharp" size={26} color="gray" />
-      </View>
-      <ListOptions />
-    </ScrollView>
+      <TouchableOpacity className="mt-auto">
+        <Text className="text-center text-lg text-[#757575] ">
+          Already have an account?
+        </Text>
+      </TouchableOpacity>
+    </LinearGradient>
   )
 }
