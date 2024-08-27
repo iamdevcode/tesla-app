@@ -1,3 +1,4 @@
+import { colors } from '#/constants/theme/colors'
 import images from '#/images'
 import { ListOptions } from '@/components/ListOptions'
 import { Status } from '@/components/Status'
@@ -13,9 +14,8 @@ import { Image, ScrollView, View } from 'react-native'
 export default function HomeScreen() {
   return (
     <ScrollView
-      contentContainerStyle={{ padding: 20, marginTop: 10 }}
+      contentContainerStyle={{ padding: 12, backgroundColor: colors.primary }}
       showsVerticalScrollIndicator={false}
-      className="bg-[#161818]"
     >
       <View className="flex-row justify-between">
         <Status />
@@ -27,10 +27,10 @@ export default function HomeScreen() {
         resizeMode="contain"
       />
       <View className="flex-row justify-around pb-8">
-        <Entypo name="lock" size={26} color="gray" />
-        <MaterialCommunityIcons name="fan" size={26} color="gray" />
-        <FontAwesome5 name="bolt" size={26} color="gray" />
-        <Ionicons name="car-sport-sharp" size={26} color="gray" />
+        <Entypo name="lock" size={24} color="gray" />
+        <MaterialCommunityIcons name="fan" size={24} color="gray" />
+        <FontAwesome5 name="bolt" size={24} color="gray" />
+        <Ionicons name="car-sport-sharp" size={24} color="gray" />
       </View>
       <ListOptions />
     </ScrollView>
