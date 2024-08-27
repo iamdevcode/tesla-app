@@ -6,10 +6,9 @@ export default function App() {
   return (
     <LinearGradient
       style={{
-        height: '100%',
-        marginTop: 30,
+        flex: 1,
         paddingVertical: 80,
-        paddingHorizontal: 20
+        paddingHorizontal: 12
       }}
       colors={['#000', '#021526', '#E90074']}
       locations={[0, 0.2, 0.9]}
@@ -24,7 +23,7 @@ export default function App() {
         }}
       />
       <TouchableOpacity className="mt-auto">
-        <Text className="text-center text-lg text-[#757575] ">
+        <Text className="text-center text-lg text-white">
           Already have an account?
         </Text>
       </TouchableOpacity>
